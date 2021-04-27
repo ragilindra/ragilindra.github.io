@@ -1,0 +1,90 @@
+.jg {
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.garis1 {
+  width: 50px;
+  height: 10px;
+  background-color: #fccf17;
+  border-radius: 10px;
+}
+.garis2 {
+  width: 50px;
+  height: 10px;
+  background-color: #5c62bd;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.kotak {
+  margin-left: 15px;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 20px;
+}
+
+.kotakSeni {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 40px;
+  width: 40px;
+}
+
+.materi {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #f2f6fb;
+}
+
+.materi-top {
+  background-color: #f2f6fb;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.deskripsi {
+  border-radius: 20px;
+  background-color: white;
+  height: 15rem;
+  width: 18rem;
+}
+
+.ungu {
+  color: #5c62bd;
+}
+
+.rumah {
+  width: 25rem;
+  height: 27rem;
+  position: relative;
+  overflow: hidden;
+  border: 0;
+}
+
+.rumah::after {
+  content: '';
+  display: block;
+  width: 25rem;
+  height: 5rem;
+  position: absolute;
+  bottom: 90px;
+}
+
+.gambar {
+  width: 25rem;
+  height: 22rem;
+  background: url(img/Rectangle\ 23.png) bottom center no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: -25px;
+  transition: top 0.3s;
+}
+
+.rumah.hilang .gambar {
+  top: 550px;
+}
